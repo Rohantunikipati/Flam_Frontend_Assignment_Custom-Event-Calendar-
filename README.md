@@ -1,30 +1,69 @@
-# Flam
+# 📅 Custom Event Calendar
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A fully interactive, dynamic event calendar built using **React**. This calendar allows users to add, edit, delete, and manage both single and recurring events, complete with drag-and-drop functionality and optional filtering.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rohan-tunikipati-s-projects/v0-flam)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/A84pzTwvgSn)
+🔗 **Live Demo**: [https://flam-frontend-assignment-custom-eve.vercel.app/](https://flam-frontend-assignment-custom-eve.vercel.app/)
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## ✨ Features
 
-## Deployment
+### 1. 📆 Monthly View Calendar
+- Displays a traditional monthly grid.
+- Highlights the **current day**.
+- Navigation for **previous/next months**.
 
-Your project is live at:
+### 2. 📝 Event Management
+- **Add Events** by clicking a date.
+- **Edit Events** by clicking on any event block.
+- **Delete Events** with confirmation.
+- Event form includes:
+  - Title
+  - Date and Time (with picker)
+  - Description
+  - Recurrence Options (Daily, Weekly, Monthly, Custom)
+  - Event Color/Category
 
-**[https://vercel.com/rohan-tunikipati-s-projects/v0-flam](https://vercel.com/rohan-tunikipati-s-projects/v0-flam)**
+### 3. 🔁 Recurring Events
+- Support for:
+  - Daily recurrence
+  - Weekly recurrence (custom days)
+  - Monthly recurrence (specific date)
+  - Custom recurrence (e.g., every 2 weeks)
+- Recurring events rendered across all valid occurrences.
 
-## Build your app
+### 4. 🔄 Drag-and-Drop Rescheduling
+- Drag and drop events between days to **reschedule easily**.
+- Handles **edge cases**, such as moving to a conflicting time/day.
 
-Continue building your app on:
+### 5. ⚠️ Conflict Management
+- Warns user on **event conflicts** (overlapping date/time).
+- Prevents accidental overlapping unless explicitly allowed.
 
-**[https://v0.dev/chat/projects/A84pzTwvgSn](https://v0.dev/chat/projects/A84pzTwvgSn)**
+### 6. 🔍 Filtering & Searching *(Optional)*
+- Filter events by **category**.
+- **Search bar** for event title/description.
+- Dynamic filtering as user types.
 
-## How It Works
+### 7. 💾 Event Persistence
+- Uses **Local Storage** to persist events.
+- Events remain saved across page refreshes and sessions.
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### 8. 📱 Responsive Design *(Optional)*
+- Fully responsive layout.
+- Supports smaller screen views with layout adjustments (e.g., weekly/daily fallback).
+
+---
+
+## ⚙️ Tech Stack
+
+- **Framework:** Next.js
+- **Date Handling:** [date-fns](https://date-fns.org/)
+- **State Management:** React useState / useReducer
+- **Drag & Drop:** [React DnD](https://react-dnd.github.io/react-dnd/) or custom
+- **Styling:** CSS Modules / Tailwind / SCSS (based on your implementation)
+
+---
+
+## 📁 Project Structure (Example)
+
